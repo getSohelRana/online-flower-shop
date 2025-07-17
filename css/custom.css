@@ -1,0 +1,44 @@
+/* Google font Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.ato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --text-primary: #272727;
+    --text-secondary: rgba(39, 39, 39, 0.6);
+    --bg-primary: #FCEEF1;
+    --bg-secondary: #E55473;
+    --bg-light-gray: rgba(39, 39, 39, 0.05);
+    --bg-light: #fff;
+}
+.section-inner{
+    max-width: 1440px;
+    padding: 50px 100px;
+    margin: 0 auto;
+}
+.section-title{
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+.section-description{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+    margin: 30px 0px;
+}
+.btn{
+    background-color: var(--bg-secondary);
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--bg-light);
+    border: none;
+}
