@@ -131,7 +131,7 @@
 .news-letter-content{
     width: 100%;
     min-height: 450px;
-    background-image: url('/asset/rectangle9.png');
+    background-image: url("../asset/news-letter-bg.png");
     background-size: cover;
     background-position: center center;
     border-radius: 8px;
@@ -189,15 +189,34 @@
     transition: background-color .3s ease-in;
 }
 /* --------------------news letter banner style end here----------------- */
-
-
-
-
-
-
-
-
-
+.footer-area{
+    max-width: 1920px;
+    height: 400px;
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-brand-name h1{
+    color: var(--bg-secondary);
+    font-weight: 800;
+    font-size: 3rem;
+}
+.footer-brand-name span{
+    color: #fff;
+}
+.footer-brand-name p{
+    max-width: 600px;
+    font-size: 1.125rem;
+    color: #fff;
+    padding: 32px 16px;
+}
+.copy-right{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1rem;
+}
+/* footer area style completed */
 
 
 /* Responsive for small devices */
