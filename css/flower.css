@@ -107,7 +107,7 @@
     color: var(--bg-secondary);
 }
 /* --------------------discount banner style end here----------------- */
-/* --------------------Social activates banner style end here----------------- */
+/* --------------------Social activates banner style start here----------------- */
 .social-card-body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -126,6 +126,70 @@
     object-fit: cover;
     align-self: center;
 }
+/* --------------------Social activates banner style end here----------------- */
+/* --------------------news letter banner style start here----------------- */
+.news-letter-content{
+    width: 100%;
+    min-height: 450px;
+    background-image: url('/asset/rectangle9.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-title h1{
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+.news-title p{
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+    margin: 16px 0px 48px;
+    text-align: center;
+}
+.news-email .email-data{
+    width: 700px;
+    height: 64px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    padding: 9px 18px;
+}
+.news-email .email-data:focus{
+    outline: 2px solid var(--bg-secondary);
+    transition: outline .5s ease-in-out;
+    border: none;
+}
+.news-email .email-data:focus::placeholder{
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+.news-email .submit-btn{
+    width: 150px;
+    height: 64px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 9px 18px;
+    background-color: var(--bg-secondary);
+    color: #fff;
+    font-size: 1.25rem;
+}
+.news-email .submit-btn:hover{
+    background-color: #35af7c;
+    transition: background-color .3s ease-in;
+}
+/* --------------------news letter banner style end here----------------- */
+
 
 
 
@@ -201,6 +265,29 @@
         align-self: center;
     }
     /* social activities  section responsive end here*/
+    .news-letter-content{
+        min-height: 400px;
+        background-image: url('/asset/rectangle9.png');
+        background-size: cover;
+        background-position: left center;
+    }
+    .news-title h1{
+        font-size: 2rem;
+    }
+    .news-email{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .news-email .email-data{
+        width: 280px;
+        height: 50px;
+        padding: 5px 10px;
+    }
+    .news-email .submit-btn{
+        height: 50px;
+    }
+    /* news letter responsive completed here */
     
 }
 /* Responsive for medium devices */
@@ -264,6 +351,28 @@
         width: 300px;
         height: 395px;
     }
+    /* social activities responsive end here */
+    .news-letter-content{
+        min-height: 450px;
+        background-position: right center;
+    }
+    .news-title h1{
+        font-size: 2rem;
+    }
+    .news-email{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .news-email .email-data{
+        width: 450px;
+        height: 50px;
+        padding: 5px 10px;
+    }
+    .news-email .submit-btn{
+        height: 50px;
+    }
+    /* news letter responsive completed here */
 }
 /* Responsive for large devices */
 @media screen and (min-width: 768.99px) and (max-width: 992px){
@@ -309,6 +418,28 @@
         grid-template-columns: repeat(2 , 1fr);
         gap: 10px;
     }
+    /* social activities responsive end here */
+      .news-letter-content{
+        min-height: 450px;
+        background-position: left center;
+    }
+    .news-title h1{
+        font-size: 2rem;
+    }
+    .news-email{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .news-email .email-data{
+        width: 620px;
+        height: 50px;
+        padding: 5px 10px;
+    }
+    .news-email .submit-btn{
+        height: 50px;
+    }
+    /* news letter responsive completed here */
 }
 @media screen and (min-width: 992.99px) and (max-width: 1400px){
 
@@ -359,4 +490,26 @@
         width: 200px;
         height: 300px;
     }
+    /* social activities responsive end here */
+      .news-letter-content{
+        min-height: 450px;
+        background-position: left center;
+    }
+    .news-title h1{
+        font-size: 2.5rem;
+    }
+    .news-email{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .news-email .email-data{
+        width: 620px;
+        height: 50px;
+        padding: 5px 10px;
+    }
+    .news-email .submit-btn{
+        height: 50px;
+    }
+    /* news letter responsive completed here */
 }
