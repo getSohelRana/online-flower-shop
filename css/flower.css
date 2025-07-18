@@ -7,7 +7,6 @@
 .top-banner{
     width: 100%;
     height: 100vh;
-    /* background-color: var(--bg-primary); */
     background-color: var(--bg-primary);
 }
 .section-wrapper{
@@ -31,12 +30,50 @@
 }
 /* --------------------top banner style end here----------------- */
 
+/* --------------------featured flowers style start here----------------- */
+.featured-flower-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    width: 350px;
+    min-height: 100%;
+    border-radius: 300px 300px 0 0 / 300px 300px 0 0;
+}
+.card-1{
+    background-color: rgba(167, 33, 98, 0.15);
+}
+.card-2{
+    background-color: rgba(5, 151, 160, 0.15);
+}
+.card-3{
+    background-color: rgba(71, 125, 17, 0.15);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    padding: 20px 40px 0px;
+    object-fit: cover;
+}
+.flower-name{
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* --------------------featured flowers style end here----------------- */
+
 /* Responsive for small devices */
 @media screen and (max-width: 575px) {
     .section-inner{
         padding: 50px 30px;
     }
-    .section-wrapper{
+    .top-banner{
+        height: auto;
+    }
+    .section-wrapper,
+    .featured-flower-card{
         flex-direction: column;
         gap: 50px;
     }
@@ -48,7 +85,18 @@
         color: var(--text-primary);
         font-size: 2rem;
     }
+    .btn{
+        display: block;
+        margin: 0 auto;
+    }
     /* banner section responsive end here */
+    .section-title{
+        margin-top: 50px;
+    }
+    .card{
+        width: 320px;
+    }
+    /* featured flower  section responsive end here */
     
 }
 /* Responsive for medium devices */
@@ -56,9 +104,13 @@
     .section-inner{
         padding: 50px 30px;
     }
-    .section-wrapper{
-        flex-direction: row;
-        gap: 30px;
+    .top-banner{
+        height: auto;
+    }
+    .section-wrapper,
+    .featured-flower-card{
+        flex-direction: column;
+        gap: 50px;
     }
     .banner-title{
         font-weight: 800;
@@ -66,5 +118,76 @@
         font-size: 2.1rem;
     }
     /* banner section responsive end here */
+     .section-title{
+        margin-top: 50px;
+    }
+    .card{
+        width: 350px;
+        min-height: 100%;
+        border-radius: 300px 300px 0 0 / 300px 300px 0 0;
+    }
+    /* featured flower  section responsive end here */
+}
+/* Responsive for large devices */
+@media screen and (min-width: 768.99px) and (max-width: 992px){
+    .section-inner{
+        padding: 50px 70px;
+    }
+    .top-banner{
+        height: auto;
+    }
+    .section-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    /* banner section responsive end here */
     
+    .featured-flower-card{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .section-title{
+        margin-top: 50px;
+    }
+    .card{
+        width: 350px;
+    }
+    /* featured flower  section responsive end here */
+}
+@media screen and (min-width: 992.99px) and (max-width: 1400px){
+
+    .section-inner{
+        padding: 50px 70px;
+    }
+    .top-banner{
+        height: auto;
+    }
+    .section-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    /* banner section responsive end here */
+    
+    .featured-flower-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    .section-title{
+        margin-top: 50px;
+    }
+    .card{
+        width: 280px;
+        margin: 0 auto;
+    }
+    /* featured flower  section responsive end here */
 }

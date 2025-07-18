@@ -15,6 +15,9 @@
     --bg-light-gray: rgba(39, 39, 39, 0.05);
     --bg-light: #fff;
 }
+.text-center{
+    text-align: center;
+}
 .section-inner{
     max-width: 1440px;
     padding: 50px 100px;
@@ -25,6 +28,7 @@
     font-size: 2.5rem;
     text-align: center;
     font-weight: 800;
+    margin-top: 180px;
 }
 .section-description{
     font-size: 1.125rem;
