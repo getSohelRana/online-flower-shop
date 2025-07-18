@@ -46,3 +46,7 @@
     color: var(--bg-light);
     border: none;
 }
+.btn:hover{
+    background-color: #35af7c;
+    transition: background-color .3s ease-in-out;
+}
